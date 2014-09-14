@@ -9,7 +9,7 @@ client.on("error", function (err) {
 });
 
 module.exports = {
-  scrap: function() {
+  scrape: function() {
     console.log('Starting the job ..');
     request({
       uri: "http://www.commitstrip.com/en",
@@ -28,4 +28,4 @@ module.exports = {
       client.set(post_id, JSON.stringify(result), redis.print);
     });
   }
-}
+};
